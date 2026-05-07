@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f5f3ef;
+  --card: #ffffff;
+  --border: #e0dbd3;
+  --text: #1a1a1a;
+  --sub: #6b6460;
+  --accent: #e85d26;
+  --accent2: #3b82f6;
+  --green: #16a34a;
+  --yellow: #d97706;
+  --red: #dc2626;
+  --tag-bg: #f0ede8;
+  --input-bg: #faf9f7;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dark {
+  --bg: #0f0f0f;
+  --card: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #f0ede8;
+  --sub: #8a8480;
+  --accent: #ff6b35;
+  --accent2: #60a5fa;
+  --green: #22c55e;
+  --yellow: #fbbf24;
+  --red: #f87171;
+  --tag-bg: #252525;
+  --input-bg: #111111;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.25s ease;
+}

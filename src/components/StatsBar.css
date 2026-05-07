@@ -1,0 +1,46 @@
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s;
+}
+
+.stat-card:hover {
+  border-color: var(--accent);
+}
+
+.stat-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.73rem;
+  color: var(--sub);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.num-total { color: var(--accent); }
+.num-applied { color: var(--accent2); }
+.num-interview { color: var(--yellow); }
+.num-offer { color: var(--green); }
+.num-rejected { color: var(--red); }
+
+@media (max-width: 480px) {
+  .stats-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+}

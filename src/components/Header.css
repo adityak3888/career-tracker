@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0 24px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 28px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.header-left h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.header-left p {
+  font-size: 0.8rem;
+  color: var(--sub);
+  margin-top: 3px;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.toggle-dark {
+  background: var(--tag-bg);
+  border: 1.5px solid var(--border);
+  color: var(--text);
+  padding: 7px 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.toggle-dark:hover {
+  border-color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .header-left h1 {
+    font-size: 1.1rem;
+  }
+}
